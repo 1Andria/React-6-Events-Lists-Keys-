@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import Container from "./Container/Container";
-import HiddenContainer from "./HiddenContainer/HiddenContainer";
+import Container from "./Components/Container/Container";
+import HiddenContainer from "./Components/HiddenContainer/HiddenContainer";
 
 function App() {
   const [visible, setVisible] = useState(true);

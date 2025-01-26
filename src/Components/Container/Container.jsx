@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Container.css";
-import Star from "../assets/Images/Star.png";
+import Star from "../../assets/Images/Star.png";
 
 function Container({ btnClick, setCvladi }) {
   const [visible, setVisible] = useState(true);

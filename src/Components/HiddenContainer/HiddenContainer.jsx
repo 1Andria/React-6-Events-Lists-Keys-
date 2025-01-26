@@ -1,6 +1,6 @@
 import React from "react";
 import "./HiddenContainer.css";
-import Payment from "../assets/Images/payment.png";
+import Payment from "../../assets/Images/payment.png";
 
 function HiddenContainer({ cvladi }) {
   return (
