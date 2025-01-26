@@ -7,8 +7,10 @@ function Container({ btnClick, setCvladi }) {
   const [buttons, setButtons] = useState([1, 2, 3, 4, 5]);
   function change(btnValue) {
     setCvladi(btnValue);
+    setBtnColor(btnValue);
   }
 
+  const [btnColor, setBtnColor] = useState(null);
   return (
     <>
       <div className="container">
@@ -23,7 +25,11 @@ function Container({ btnClick, setCvladi }) {
         <div className="btn_div">
           {buttons.map((btn, key) => {
             return (
-              <button onClick={() => change(btn)} className="button" key={key}>
+              <button
+                onClick={() => change(btn)}
+                className={`button ${btnColor === btn ? `active` : ""}`}
+                key={key}
+              >
                 {btn}
               </button>
             );

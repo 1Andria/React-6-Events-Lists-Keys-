@@ -138,7 +138,7 @@
     cursor: pointer;
     transition: 0.4s;
 }
-.button:focus{
+.active{
     background-color: var(--Orange, #FC7614);
     color: var(--Pure-White, #FFF);
     text-align: center;
@@ -150,7 +150,6 @@
     line-height: 24px; 
     letter-spacing: 0.2px;
     transition: 0.4s;
-
 }
 .thank{
     color: #FFF;
